@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug WebServer",
+            "program": "${workspaceFolder:webserver}/.build/debug/WebServer",
+            "args": [],
+            "cwd": "${workspaceFolder:webserver}",
+            "preLaunchTask": "swift: Build Debug WebServer"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release WebServer",
+            "program": "${workspaceFolder:webserver}/.build/release/WebServer",
+            "args": [],
+            "cwd": "${workspaceFolder:webserver}",
+            "preLaunchTask": "swift: Build Release WebServer"
+        }
+    ]
+}
